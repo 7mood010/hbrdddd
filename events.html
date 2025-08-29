@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Events — Your School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="School Logo" class="logo" />
+      <span class="brand-name" data-en="Your School" data-ar="مدرستكم">Your School</span>
+    </div>
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a class="nav-link" href="about.html" data-en="About" data-ar="عن المدرسة">About</a></li>
+        <li><a class="nav-link" href="achievements.html" data-en="Achievements" data-ar="الإنجازات">Achievements</a></li>
+        <li><a class="nav-link" href="ambassadors.html" data-en="Ambassadors" data-ar="السفراء">Ambassadors</a></li>
+        <li><a class="nav-link active" href="events.html" data-en="Events" data-ar="الفعاليات">Events</a></li>
+        <li><a class="nav-link" href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a class="nav-link" href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="langToggle" class="btn small">AR</button>
+      <button id="menuToggle" class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="mobile-inner">
+      <ul>
+        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a href="about.html" data-en="About" data-ar="عن المدرسة">About</a></li>
+        <li><a href="achievements.html" data-en="Achievements" data-ar="الإنجازات">Achievements</a></li>
+        <li><a href="ambassadors.html" data-en="Ambassadors" data-ar="السفراء">Ambassadors</a></li>
+        <li><a class="active" href="events.html" data-en="Events" data-ar="الفعاليات">Events</a></li>
+        <li><a href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUB HERO -->
+  <section class="sub-hero" style="--bg:url('assets/events-hero.jpg')">
+    <div class="sub-hero-shade">
+      <h1 class="sub-hero-title" data-en="School Events" data-ar="فعاليات المدرسة">School Events</h1>
+    </div>
+  </section>
+
+  <!-- CONTROLS -->
+  <section class="card-glass events-controls page">
+    <div class="filters-row">
+      <select id="yearSelect" class="select" aria-label="Year">
+        <option value="all" data-en="All Years" data-ar="كل السنوات">All Years</option>
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+      </select>
+      <input id="eventSearch" class="input" type="search"
+             placeholder="Search events…"
+             data-en-placeholder="Search events…"
+             data-ar-placeholder="ابحث في الفعاليات…">
+    </div>
+  </section>
+
+  <!-- EVENTS LIST (grouped by month) -->
+  <main class="page">
+    <section id="eventsList" class="events-list">
+
+      <!-- ✨ COPY THIS BLOCK to add a new event -->
+      <article class="event-card" data-year="2025" data-date="2025-09-10" data-title="STEM Expo">
+        <div class="event-media">
+          <img src="assets/event-stem-expo.jpg" alt="STEM Expo">
+          <div class="event-date">
+            <span class="d">10</span><span class="m">Sep</span>
+          </div>
+        </div>
+        <div class="event-body">
+          <h3 data-en="STEM Expo" data-ar="معرض العلوم والتقنية">STEM Expo</h3>
+          <p class="event-meta">
+            <span data-en="Auditorium" data-ar="القاعة الرئيسية">Auditorium</span> •
+            <span data-en="8:30 AM – 1:00 PM" data-ar="٨:٣٠ ص – ١:٠٠ م">8:30 AM – 1:00 PM</span>
+          </p>
+          <p class="event-desc"
+             data-en="A showcase of student innovation in science, robotics, and engineering."
+             data-ar="عرض لابتكارات الطلاب في العلوم والروبوتات والهندسة.">
+             A showcase of student innovation in science, robotics, and engineering.
+          </p>
+        </div>
+      </article>
+      <!-- /copy block -->
+
+     <article class="event-card" data-year="2025" data-date="2025-08-28" data-title="International Women’s Day Celebration">
+  <div class="event-media">
+    <!-- replace with your photo -->
+    <img src="image/WOMENS DAY.jpg" alt="International Women’s Day Celebration — Hamdan Bin Rashid School">
+    <div class="event-date"><span class="d">28</span><span class="m">Aug</span></div>
+  </div>
+  <div class="event-body">
+    <h3 data-en="International Women’s Day Celebration"
+        data-ar="احتفالية يوم المرأة العالمي">
+      International Women’s Day Celebration
+    </h3>
+    <p class="event-meta">
+      <span data-en="Hamdan Bin Rashid School — Main Hall" data-ar="مدرسة حمدان بن راشد — القاعة الرئيسية">
+        Hamdan Bin Rashid School — Main Hall
+      </span>
+      •
+      <span data-en="10:00 AM – 1:00 PM" data-ar="١٠:٠٠ ص – ١:٠٠ م">
+        10:00 AM – 1:00 PM
+      </span>
+    </p>
+    <p class="event-desc"
+       data-en="A school-wide program honoring women’s achievements with student speeches, exhibitions, and community guests."
+       data-ar="برنامج على مستوى المدرسة للاحتفاء بإنجازات المرأة، يتضمن كلمات طلابية ومعارض وضيوفًا من المجتمع.">
+       A school-wide program honoring women’s achievements with student speeches, exhibitions, and community guests.
+    </p>
+  </div>
+</article>
+
+
+      <article class="event-card" data-year="2026" data-date="2026-01-15" data-title="Ambassadors Induction">
+        <div class="event-media">
+          <img src="assets/event-ambassadors.jpg" alt="Ambassadors Induction">
+          <div class="event-date"><span class="d">15</span><span class="m">Jan</span></div>
+        </div>
+        <div class="event-body">
+          <h3 data-en="Ambassadors Induction" data-ar="حفل تنصيب السفراء">Ambassadors Induction</h3>
+          <p class="event-meta">
+            <span data-en="Main Hall" data-ar="القاعة الرئيسية">Main Hall</span> •
+            <span data-en="10:00 AM" data-ar="١٠:٠٠ ص">10:00 AM</span>
+          </p>
+          <p class="event-desc"
+             data-en="Welcoming new Academic, Sports, Coding/AI, and National Team ambassadors."
+             data-ar="الترحيب بسفراء الأكاديميات والرياضة والبرمجة/الذكاء الاصطناعي والمنتخب الوطني.">
+             Welcoming new Academic, Sports, Coding/AI, and National Team ambassadors.
+          </p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer-min">
+    <p data-en="© 2025 Your School. All rights reserved."
+       data-ar="© ٢٠٢٥ مدرستكم. جميع الحقوق محفوظة.">© 2025 Your School. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Page-specific JS -->
+  <script>
+    (function(){
+      const list = document.getElementById('eventsList');
+      const yearSel = document.getElementById('yearSelect');
+      const search = document.getElementById('eventSearch');
+
+      const cards = Array.from(list.querySelectorAll('.event-card'));
+
+      // sort by date ascending
+      cards.sort((a,b)=> new Date(a.dataset.date) - new Date(b.dataset.date))
+           .forEach(c => list.appendChild(c));
+
+      function monthName(dt, lang){
+        const m = new Date(dt).toLocaleString(lang==='ar'?'ar':'en', {month:'short'});
+        return m.charAt(0).toUpperCase() + m.slice(1);
+      }
+
+      // Insert month headers
+      let lastMonthKey = '';
+      cards.forEach(card=>{
+        const dt = card.dataset.date;
+        const d = new Date(dt);
+        const key = d.getFullYear()+'-'+(d.getMonth()+1);
+        if(key !== lastMonthKey){
+          const h = document.createElement('h2');
+          h.className = 'month-head';
+          h.setAttribute('data-month', key);
+          h.setAttribute('data-en', d.toLocaleString('en', {month:'long', year:'numeric'}));
+          h.setAttribute('data-ar', d.toLocaleString('ar', {month:'long', year:'numeric'}));
+          h.textContent = h.getAttribute('data-en');
+          list.insertBefore(h, card);
+          lastMonthKey = key;
+        }
+        // write day & month badge
+        const dEl = card.querySelector('.event-date .d');
+        const mEl = card.querySelector('.event-date .m');
+        if(dEl && mEl){
+          dEl.textContent = d.getDate().toString().padStart(2,'0');
+          mEl.textContent = monthName(dt, document.documentElement.lang || 'en');
+        }
+      });
+
+      function apply(){
+        const y = yearSel.value || 'all';
+        const q = (search.value || '').trim().toLowerCase();
+
+        // show/hide cards
+        cards.forEach(c=>{
+          const okY = (y==='all' || c.dataset.year === y);
+          const okQ = (q==='' || (c.dataset.title||'').toLowerCase().includes(q));
+          c.style.display = (okY && okQ) ? '' : 'none';
+        });
+
+        // show/hide month headers if month has visible cards
+        list.querySelectorAll('.month-head').forEach(h=>{
+          const ym = h.getAttribute('data-month');
+          const hasAny = cards.some(c=>{
+            const d = new Date(c.dataset.date);
+            const key = d.getFullYear()+'-'+(d.getMonth()+1);
+            return key===ym && c.style.display!=='none';
+          });
+          h.style.display = hasAny ? '' : 'none';
+        });
+      }
+
+      // localize controls + month headers on language change
+      function localize(){
+        const lang = document.documentElement.lang || 'en';
+        const firstOpt = yearSel.querySelector('option[value="all"]');
+        if(firstOpt){
+          firstOpt.textContent = lang==='ar'
+            ? firstOpt.getAttribute('data-ar')
+            : firstOpt.getAttribute('data-en');
+        }
+        search.placeholder = lang==='ar'
+          ? (search.getAttribute('data-ar-placeholder') || 'ابحث في الفعاليات…')
+          : (search.getAttribute('data-en-placeholder') || 'Search events…');
+
+        list.querySelectorAll('.month-head').forEach(h=>{
+          h.textContent = lang==='ar' ? h.getAttribute('data-ar') : h.getAttribute('data-en');
+        });
+
+        // month short label inside badges
+        cards.forEach(c=>{
+          const d = c.dataset.date;
+          const mEl = c.querySelector('.event-date .m');
+          if(mEl) mEl.textContent = monthName(d, lang);
+        });
+      }
+
+      yearSel.addEventListener('change', apply);
+      search.addEventListener('input', apply);
+
+      const obs = new MutationObserver(()=>{ localize(); });
+      obs.observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
+
+      localize();
+      apply();
+    })();
+  </script>
+</body>
+</html>

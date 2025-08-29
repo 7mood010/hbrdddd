@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ambassadors — Your School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="School Logo" class="logo" />
+      <span class="brand-name" data-en="Your School" data-ar="مدرستكم">Your School</span>
+    </div>
+
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a class="nav-link" href="about.html" data-en="About" data-ar="عن المدرسة">About</a></li>
+        <li><a class="nav-link" href="achievements.html" data-en="Achievements" data-ar="الإنجازات">Achievements</a></li>
+        <li><a class="nav-link active" href="ambassadors.html" data-en="Ambassadors" data-ar="السفراء">Ambassadors</a></li>
+        <li><a class="nav-link" href="events.html" data-en="Events" data-ar="الفعاليات">Events</a></li>
+        <li><a class="nav-link" href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a class="nav-link" href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button id="langToggle" class="btn small">AR</button>
+      <button id="menuToggle" class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE OVERLAY MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="mobile-inner">
+      <ul>
+        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a href="about.html" data-en="About" data-ar="عن المدرسة">About</a></li>
+        <li><a href="achievements.html" data-en="Achievements" data-ar="الإنجازات">Achievements</a></li>
+        <li><a class="active" href="ambassadors.html" data-en="Ambassadors" data-ar="السفراء">Ambassadors</a></li>
+        <li><a href="events.html" data-en="Events" data-ar="الفعاليات">Events</a></li>
+        <li><a href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUB HERO -->
+  <section class="sub-hero" style="--bg:url('assets/ambassadors-hero.jpg')">
+    <div class="sub-hero-shade">
+      <h1 class="sub-hero-title" data-en="Student Ambassadors" data-ar="سفراء الطلاب">Student Ambassadors</h1>
+    </div>
+  </section>
+
+  <!-- PAGE -->
+  <main class="page">
+
+    <!-- FILTERS -->
+    <section class="amb-controls card-glass">
+      <div class="chips" role="tablist" aria-label="Roles">
+        <button class="chip active" data-role="all" data-en="All" data-ar="الكل">All</button>
+        <button class="chip" data-role="academic" data-en="Academic" data-ar="أكاديمي">Academic</button>
+        <button class="chip" data-role="school" data-en="School" data-ar="المدرسة">School</button>
+        <button class="chip" data-role="sports" data-en="Sports" data-ar="رياضة">Sports</button>
+        <button class="chip" data-role="coding" data-en="Coding/AI" data-ar="البرمجة/الذكاء الاصطناعي">Coding/AI</button>
+        <button class="chip" data-role="national" data-en="National Team" data-ar="المنتخب الوطني">National Team</button>
+      </div>
+
+      <div class="filters-row">
+        <input id="searchAmb" class="input" type="search"
+               placeholder="Search by name…"
+               data-en-placeholder="Search by name…"
+               data-ar-placeholder="ابحث بالاسم…">
+      </div>
+    </section>
+
+    <!-- GRID -->
+    <section id="ambGrid" class="amb-grid">
+
+      <!-- ✨ COPY THIS BLOCK to add a new ambassador later -->
+      <!-- data-roles is a comma list: academic,school,sports,coding,national -->
+      <article class="amb-card" data-roles="school,academic" data-name="Sample Student">
+        <div class="amb-photo"><img src="assets/amb-sample.jpg" alt="Ambassador Photo"></div>
+        <div class="amb-body">
+          <h3 class="amb-name" data-en="Sample Student" data-ar="طالب نموذجي">Sample Student</h3>
+          <p class="amb-desc"
+             data-en="Ambassador description goes here."
+             data-ar="يظهر هنا وصف السفير.">Ambassador description goes here.</p>
+          <div class="amb-tags">
+            <span class="tag" data-en="School" data-ar="المدرسة">School</span>
+            <span class="tag" data-en="Academic" data-ar="أكاديمي">Academic</span>
+          </div>
+        </div>
+      </article>
+      <!-- /copy block -->
+
+      <!-- Mohammed Yasser Almarzooqi -->
+      <article class="amb-card" data-roles="national,school,coding,sports" data-name="Mohammed Yasser Almarzooqi">
+        <div class="amb-photo"><img src="assets/amb-mohammed.jpg" alt="Mohammed Yasser Almarzooqi"></div>
+        <div class="amb-body">
+          <h3 class="amb-name"
+              data-en="Mohammed Yasser Almarzooqi"
+              data-ar="محمد ياسر المزروعي">Mohammed Yasser Almarzooqi</h3>
+          <p class="amb-desc"
+             data-en="National Team Ambassador (UAE AI Olympiad & IOAI), School Ambassador, Coding/AI Team, and Sports Ambassador."
+             data-ar="سفير المنتخب الوطني (أولمبياد الذكاء الاصطناعي الإماراتي وIOAI)، سفير المدرسة، ضمن فريق البرمجة والذكاء الاصطناعي، وسفير رياضي.">
+             National Team Ambassador (UAE AI Olympiad & IOAI), School Ambassador, Coding/AI Team, and Sports Ambassador.
+          </p>
+          <div class="amb-tags">
+            <span class="tag" data-en="National Team" data-ar="المنتخب الوطني">National Team</span>
+            <span class="tag" data-en="School" data-ar="المدرسة">School</span>
+            <span class="tag" data-en="Coding/AI" data-ar="البرمجة/الذكاء الاصطناعي">Coding/AI</span>
+            <span class="tag" data-en="Sports" data-ar="رياضة">Sports</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Mansoor Khalid Al Hammadi -->
+      <article class="amb-card" data-roles="academic,school" data-name="Mansoor Khalid Al Hammadi">
+        <div class="amb-photo"><img src="assets/amb-mansoor.jpg" alt="Mansoor Khalid Al Hammadi"></div>
+        <div class="amb-body">
+          <h3 class="amb-name"
+              data-en="Mansoor Khalid Al Hammadi"
+              data-ar="منصور خالد الحمادي">Mansoor Khalid Al Hammadi</h3>
+          <p class="amb-desc"
+             data-en="Academic Ambassador and School Ambassador. Selected for NYUAD Summer Academy."
+             data-ar="سفير أكاديمي وسفير للمدرسة. تم اختياره لأكاديمية صيف جامعة نيويورك أبوظبي.">
+             Academic Ambassador and School Ambassador. Selected for NYUAD Summer Academy.
+          </p>
+          <div class="amb-tags">
+            <span class="tag" data-en="Academic" data-ar="أكاديمي">Academic</span>
+            <span class="tag" data-en="School" data-ar="المدرسة">School</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Top 3 — Academic Ambassadors (examples, replace anytime) -->
+
+
+
+
+   
+    </section>
+  </main>
+
+  <footer class="footer-min">
+    <p data-en="© 2025 Your School. All rights reserved."
+       data-ar="© ٢٠٢٥ مدرستكم. جميع الحقوق محفوظة.">
+       © 2025 Your School. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Page-specific JS -->
+  <script>
+    (function(){
+      const grid = document.getElementById('ambGrid');
+      if(!grid) return;
+
+      const cards = Array.from(grid.querySelectorAll('.amb-card'));
+      const chips = document.querySelectorAll('.chip');
+      const search = document.getElementById('searchAmb');
+
+      let currentRole = 'all';
+
+      function apply(){
+        const q = (search?.value || '').trim().toLowerCase();
+        cards.forEach(card=>{
+          const roles = (card.dataset.roles || '').toLowerCase();
+          const name  = (card.dataset.name  || '').toLowerCase();
+          const okRole = (currentRole==='all' || roles.split(',').includes(currentRole));
+          const okText = (q==='' || name.includes(q));
+          card.style.display = (okRole && okText) ? '' : 'none';
+        });
+      }
+
+      chips.forEach(ch=>{
+        ch.addEventListener('click', ()=>{
+          chips.forEach(c=>c.classList.remove('active'));
+          ch.classList.add('active');
+          currentRole = ch.dataset.role || 'all';
+          apply();
+        });
+      });
+      search?.addEventListener('input', apply);
+
+      // Localize placeholders + chip labels when language toggles
+      function localizeUI(){
+        const lang = document.documentElement.lang || 'en';
+        if(search){
+          search.placeholder = (lang==='ar')
+            ? (search.getAttribute('data-ar-placeholder') || 'ابحث بالاسم…')
+            : (search.getAttribute('data-en-placeholder') || 'Search by name…');
+        }
+        chips.forEach(ch=>{
+          ch.textContent = (lang==='ar')
+            ? ch.getAttribute('data-ar')
+            : ch.getAttribute('data-en');
+        });
+      }
+      const obs = new MutationObserver(localizeUI);
+      obs.observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
+
+      localizeUI();
+      apply();
+    })();
+  </script>
+</body>
+</html>

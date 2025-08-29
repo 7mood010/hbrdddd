@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Your School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER (same as index) -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="School Logo" class="logo" />
+      <span class="brand-name" data-en="Hamdan Bin Rashid School" data-ar="مدرسة حمدان بن راشد للتعليم الثانوي للبنين">Your School</span>
+    </div>
+
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a class="nav-link active" href="about.html" data-en="About" data-ar="عن المدرسة">About</a></li>
+        <li><a class="nav-link" href="achievements.html" data-en="Achievements" data-ar="الإنجازات">Achievements</a></li>
+        <li><a class="nav-link" href="ambassadors.html" data-en="Ambassadors" data-ar="السفراء">Ambassadors</a></li>
+        <li><a class="nav-link" href="events.html" data-en="Events" data-ar="الفعاليات">Events</a></li>
+        <li><a class="nav-link" href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a class="nav-link" href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button id="langToggle" class="btn small">AR</button>
+      <button id="menuToggle" class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE OVERLAY MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="mobile-inner">
+      <ul>
+        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a href="about.html" data-en="About" data-ar="عن المدرسة">About</a></li>
+        <li><a href="achievements.html" data-en="Achievements" data-ar="الإنجازات">Achievements</a></li>
+        <li><a href="ambassadors.html" data-en="Ambassadors" data-ar="السفراء">Ambassadors</a></li>
+        <li><a href="events.html" data-en="Events" data-ar="الفعاليات">Events</a></li>
+        <li><a href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUB HERO -->
+  <section class="sub-hero" style="--bg:url('assets/about-hero.jpg')">
+    <div class="sub-hero-shade">
+      <h1 class="sub-hero-title"
+          data-en="About Our School"
+          data-ar="عن مدرستنا">About Our School</h1>
+    </div>
+  </section>
+
+  <!-- PAGE CONTENT -->
+  <main class="page">
+    <!-- Principal -->
+    <section class="two-col card-glass">
+      <div class="col media">
+        <!-- Replace with principal photo -->
+        <div class="img-frame">
+          <img src="image/ms afaf.jpg" alt="Principal" />
+        </div>
+      </div>
+      <div class="col content">
+        <h2 data-en="Principal’s Message" data-ar="رسالة المدير">Principal’s Message</h2>
+        <p data-en="Welcome to our school — a community where every learner matters. With more than 560 students, over 30 dedicated teachers, and one close-knit campus, we celebrate 50+ awards while focusing on values and character that last far beyond any trophy."
+           data-ar="مرحبًا بكم في مدرستنا — مجتمع يُعطي كل متعلم أهميته. يضم مجتمعنا أكثر من ٥٦٠ طالبًا، وأكثر من ٣٠ معلمًا، وفي حرمٍ واحد مترابط. نحتفل بما يزيد على ٥٠ جائزة، ونضع القيم والشخصية في صميم رحلتنا التعليمية.">
+           Welcome to our school — a community where every learner matters. With more than 560 students, over 30 dedicated teachers, and one close-knit campus, we celebrate 50+ awards while focusing on values and character that last far beyond any trophy.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="grid-2">
+      <div class="tile">
+        <h3 data-en="Our Mission" data-ar="مهمتنا">Our Mission</h3>
+        <p data-en="Provide a safe and inspiring learning environment where every student is empowered to grow academically, socially, and personally — preparing them to thrive in a changing world."
+           data-ar="توفير بيئة تعليمية آمنة وملهمة تمكّن كل طالب من النمو أكاديميًا واجتماعيًا وشخصيًا — وإعداده للنجاح في عالمٍ متغيّر.">
+           Provide a safe and inspiring learning environment where every student is empowered to grow academically, socially, and personally — preparing them to thrive in a changing world.
+        </p>
+      </div>
+      <div class="tile">
+        <h3 data-en="Our Vision" data-ar="رؤيتنا">Our Vision</h3>
+        <p data-en="Be a leading school community recognized for excellence, innovation, and character — shaping responsible, creative, and ambitious leaders."
+           data-ar="أن نكون مجتمعًا مدرسيًا رائدًا معروفًا بالتميّز والابتكار والقيم — يساهم في إعداد قادة مسؤولين ومبدعين وطموحين.">
+           Be a leading school community recognized for excellence, innovation, and character — shaping responsible, creative, and ambitious leaders.
+        </p>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="grid-3">
+      <div class="value-card">
+        <h4 data-en="Excellence" data-ar="التميّز">Excellence</h4>
+        <p data-en="We commit to the highest standards in learning and conduct."
+           data-ar="نلتزم بأعلى المعايير في التعلم والسلوك.">We commit to the highest standards in learning and conduct.</p>
+      </div>
+      <div class="value-card">
+        <h4 data-en="Respect" data-ar="الاحترام">Respect</h4>
+        <p data-en="We value diversity, empathy, and inclusion."
+           data-ar="نثمّن التنوع والتعاطف والشمول.">We value diversity, empathy, and inclusion.</p>
+      </div>
+      <div class="value-card">
+        <h4 data-en="Leadership" data-ar="القيادة">Leadership</h4>
+        <p data-en="We grow confident, responsible leaders who serve their community."
+           data-ar="ننمّي قادة واثقين ومسؤولين يخدمون مجتمعهم.">We grow confident, responsible leaders who serve their community.</p>
+      </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats">
+      <div class="stat"><span>560+</span><small data-en="Students" data-ar="طلاب">Students</small></div>
+      <div class="stat"><span>30+</span><small data-en="Teachers" data-ar="معلمون">Teachers</small></div>
+      <div class="stat"><span>50+</span><small data-en="Awards" data-ar="جوائز">Awards</small></div>
+      <div class="stat"><span>1</span><small data-en="Building" data-ar="المبنى">Building</small></div>
+    </section>
+
+    <!-- Page CTAs -->
+    <section class="cta-row">
+      <a href="achievements.html" class="btn-ghost"
+         data-en="View Achievements" data-ar="عرض الإنجازات">View Achievements</a>
+      <a href="ambassadors.html" class="btn-ghost"
+         data-en="Meet Ambassadors" data-ar="تعرف على السفراء">Meet Ambassadors</a>
+    </section>
+  </main>
+
+  <footer class="footer-min">
+    <p data-en="© 2025 Your School. All rights reserved."
+       data-ar="© ٢٠٢٥ مدرستكم. جميع الحقوق محفوظة.">
+       © 2025 Your School. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

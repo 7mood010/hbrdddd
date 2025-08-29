@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Achievements — Your School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="School Logo" class="logo" />
+      <span class="brand-name" data-en="Hamdan Bin Rashid School" data-ar="مدرسة حمدان بن راشد للتعليم الثانوي للبنين">Your School</span>
+    </div>
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a class="nav-link" href="about.html" data-en="About" data-ar="عن المدرسة">About</a></li>
+        <li><a class="nav-link active" href="achievements.html" data-en="Achievements" data-ar="الإنجازات">Achievements</a></li>
+        <li><a class="nav-link" href="ambassadors.html" data-en="Ambassadors" data-ar="السفراء">Ambassadors</a></li>
+        <li><a class="nav-link" href="events.html" data-en="Events" data-ar="الفعاليات">Events</a></li>
+        <li><a class="nav-link" href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a class="nav-link" href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="langToggle" class="btn small">AR</button>
+      <button id="menuToggle" class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="mobile-inner">
+      <ul>
+        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a href="about.html" data-en="About" data-ar="عن المدرسة">About</a></li>
+        <li><a class="active" href="achievements.html" data-en="Achievements" data-ar="الإنجازات">Achievements</a></li>
+        <li><a href="ambassadors.html" data-en="Ambassadors" data-ar="السفراء">Ambassadors</a></li>
+        <li><a href="events.html" data-en="Events" data-ar="الفعاليات">Events</a></li>
+        <li><a href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUB HERO -->
+  <section class="sub-hero" style="--bg:url('assets/achievements-hero.jpg')">
+    <div class="sub-hero-shade">
+      <h1 class="sub-hero-title" data-en="Achievements" data-ar="الإنجازات">Achievements</h1>
+    </div>
+  </section>
+
+  <!-- PAGE -->
+  <main class="page">
+
+    <!-- FILTER BAR -->
+    <section class="achv-controls card-glass">
+      <div class="chips" role="tablist" aria-label="Categories">
+        <button class="chip active" data-filter="all" data-en="All" data-ar="الكل">All</button>
+        <button class="chip" data-filter="academic" data-en="Academic" data-ar="أكاديمي">Academic</button>
+        <button class="chip" data-filter="sports" data-en="Sports" data-ar="رياضة">Sports</button>
+        <button class="chip" data-filter="arts" data-en="Arts" data-ar="فنون">Arts</button>
+        <button class="chip" data-filter="community" data-en="Community" data-ar="مجتمع">Community</button>
+      </div>
+
+      <div class="filters-row">
+        <input id="searchAchv" class="input" type="search"
+               placeholder="Search…"
+               data-en-placeholder="Search…"
+               data-ar-placeholder="ابحث…">
+        <select id="yearFilter" class="select">
+          <option value="all" data-en="All Years" data-ar="كل السنوات">All Years</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- GRID -->
+    <section id="achvGrid" class="achv-grid">
+
+      <!-- ✨ COPY THIS BLOCK to add a new achievement (change src + EN/AR text) -->
+      <article class="achv-card" data-cat="academic" data-year="2025" data-title="UAE Hackathon Winner 2025">
+        <div class="achv-img">
+          <img src="image/aradixamlak.jpg" alt="UAE Hackathon Winner 2025">
+        </div>
+        <div class="achv-body">
+          <h3 data-en="UAE Hackathon — Winners (2025)" data-ar="هاكاثون الإمارات — الفائزون (٢٠٢٥)">UAE Hackathon — Winners (2025)</h3>
+          <p data-en="Winning project in collaboration with Dubai Land Department."
+             data-ar="مشروع فائز بالتعاون مع دائرة الأراضي والأملاك بدبي.">
+             Winning project in collaboration with Dubai Land Department.
+          </p>
+          <div class="tags">
+            <span class="tag" data-en="Academic" data-ar="أكاديمي">Academic</span>
+            <span class="tag">2025</span>
+          </div>
+        </div>
+      </article>
+      <!-- /copy block -->
+
+      <!-- EXAMPLES you gave -->
+      <article class="achv-card" data-cat="academic" data-year="2024" data-title="Dubai Hackathon 2nd Place 2024">
+        <div class="achv-img">
+          <img src="image/hakathon winnders hbr school 2024 uae hak.jpg" alt="Dubai Hackathon 2024 — 2nd Place">
+        </div>
+        <div class="achv-body">
+          <h3 data-en="UAE Hackathon — 2nd Place (2024)" data-ar="هاكاثون الإمارات  — المركز الثاني (٢٠٢٤)">Dubai Hackathon — 2nd Place (2024)</h3>
+          <p data-en="Student team achieved 2nd place among top UAE schools."
+             data-ar=" المركز الثاني على مستوى دولة الإمارات العربية المتحدة.">
+             Student team achieved 2nd place among top UAE schools.
+          </p>
+          <div class="tags">
+            <span class="tag" data-en="Academic" data-ar="أكاديمي">Academic</span>
+            <span class="tag">2024</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="achv-card" data-cat="sports" data-year="2025" data-title="Brazilian Jiu-Jitsu National Best School Team UAE">
+        <div class="achv-img">
+          <img src="image/5875133279877844768.jpg" alt="Brazilian Jiu-Jitsu — National Best School Team (UAE)">
+        </div>
+        <div class="achv-body">
+          <h3 data-en="Brazilian Jiu-Jitsu — National Best School Team (UAE)"
+              data-ar="الجوجيتسو البرازيلية — أفضل فريق مدرسي على مستوى الدولة">Brazilian Jiu-Jitsu — National Best School Team (UAE)</h3>
+          <p data-en="Crowned best school team across the UAE in national competitions."
+             data-ar="تتويج فريق المدرسة كأفضل فريق على مستوى الإمارات في البطولات الوطنية.">
+             Crowned best school team across the UAE in national competitions.
+          </p>
+          <div class="tags">
+            <span class="tag" data-en="Sports" data-ar="رياضة">Sports</span>
+            <span class="tag">2025</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="achv-card" data-cat="sports" data-year="2025" data-title="NYUAD Summer Academy — School Ambassadors (2025 & 2026)">
+        <div class="achv-img">
+          <img src="image/m andm.jpg" alt="NYUAD Summer Academy — School Ambassadors (2025 & 2026)">
+        </div>
+        <div class="achv-body">
+          <h3 data-en="NYUAD Summer Academy — School Ambassadors (2025 & 2026)"
+              data-ar="أكاديمية صيف جامعة نيويورك أبوظبي — سفراء المدرسة (٢٠٢٥ و٢٠٢٦)">NYUAD Summer Academy — School Ambassadors (2025 & 2026)</h3>
+          <p data-en="Students Mohammed Yasser Almarzooqi and Mansoor Khalid Al Hammadi were selected to participate in the NYU Abu Dhabi Summer Academy in 2025 and 2026. We congratulate them and wish them continued success in their journey as Summer Academy scholars and proud ambassadors of our school."
+             data-ar="
+تم اختيار الطالبين محمد ياسر المرزوقي ومنصور خالد الحمادي للمشاركة في أكاديمية صيف جامعة نيويورك أبوظبي لعامي ٢٠٢٥ و٢٠٢٦. نبارك لهما ونتمنى لهما دوام التوفيق في رحلتهما كطلبة في الأكاديمية الصيفية وسفيرين فخورين لمدرستنا.">
+             Championship team included two students from our school.
+          </p>
+          <div class="tags">
+            <span class="tag" data-en="Sports" data-ar="رياضة">Sports</span>
+            <span class="tag">2025</span>
+          </div>
+        </div>
+      </article>
+
+
+
+      <article class="achv-card" data-cat="arts" data-year="2025" data-title="MOE International AI Series — Photography & Videography Winners (2025)
+
+ (Arabic):">
+        <div class="achv-img">
+          <img src="image/KHALIFA.jpg"
+        </div>
+        <div class="achv-body">
+          <h3 data-en="Photography Competition — Winner"
+              data-ar="سلسلة الذكاء الاصطناعي الدولية لوزارة التربية والتعليم — الفائزون في فئة التصوير الفوتوغرافي والفيديو (٢٠٢٥)">Photography Competition — Winner</h3>
+          <p data-en="Students Khalifa Al Blooshi and Rashid Mohammed were recognized as winners in the Photography & Videography category of the Ministry of Education’s International AI Series 2025."
+             data-ar="تم تكريم الطالبين خليفة البلوشي وراشد محمد كفائزين في فئة التصوير الفوتوغرافي والفيديو ضمن سلسلة الذكاء الاصطناعي الدولية لوزارة التربية والتعليم لعام ٢٠٢٥.">
+             Student won recognition in the national photography competition.
+          </p>
+          <div class="tags">
+            <span class="tag" data-en="Arts" data-ar="فنون">Arts</span>
+            <span class="tag">2025</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="achv-card" data-cat="academic" data-year="2025" data-title="Arabic Reading Challenge">
+        <div class="achv-img">
+          <img src="image/reading rab comp.jpg" alt="Arabic Reading Challenge — Winner">
+        </div>
+        <div class="achv-body">
+          <h3 data-en="Arabic Reading Challenge — Winner"
+              data-ar="تحدي القراءة العربي — الفائز">Arabic Reading Challenge — Winner</h3>
+          <p data-en="Student Mohammed Yasser Almarzooqi achieved 1st place in Dubai and 6th place in the UAE finals."
+             data-ar="حقق الطالب محمد ياسر المزروعي المركز الأول في دبي والمركز السادس في نهائيات الإمارات.">
+             Student Mohammed Yasser Almarzooqi achieved 1st place in Dubai and 6th place in the UAE finals.
+          </p>
+          <div class="tags">
+            <span class="tag" data-en="Academic" data-ar="أكاديمي">Academic</span>
+            <span class="tag">2025</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-min">
+    <p data-en="© 2025 Your School. All rights reserved."
+       data-ar="© ٢٠٢٥ مدرستكم. جميع الحقوق محفوظة.">
+       © 2025 Your School. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+ <script src="script.js"></script>
+  <!-- Page-specific filters/search -->
+  <script>
+    (function(){
+      const grid = document.getElementById('achvGrid');
+      if(!grid) return;
+
+      const cards = Array.from(grid.querySelectorAll('.achv-card'));
+      const chips = document.querySelectorAll('.chip');
+      const search = document.getElementById('searchAchv');
+      const year   = document.getElementById('yearFilter');
+
+      let currentCat = 'all';
+
+      function apply(){
+        const q = (search?.value || '').trim().toLowerCase();
+        const y = year?.value || 'all';
+        cards.forEach(card=>{
+          const cat  = card.dataset.cat;
+          const yr   = card.dataset.year;
+          const ttl  = (card.dataset.title || '').toLowerCase();
+          const okCat  = (currentCat==='all' || currentCat===cat);
+          const okYear = (y==='all' || y===yr);
+          const okText = (q==='' || ttl.includes(q));
+          card.style.display = (okCat && okYear && okText) ? '' : 'none';
+        });
+      }
+
+      chips.forEach(ch=>{
+        ch.addEventListener('click', ()=>{
+          chips.forEach(c=>c.classList.remove('active'));
+          ch.classList.add('active');
+          currentCat = ch.dataset.filter || 'all';
+          apply();
+        });
+      });
+      search?.addEventListener('input', apply);
+      year?.addEventListener('change', apply);
+
+      // Localization for placeholders and chip labels
+      function localizeUI(){
+        const lang = document.documentElement.lang || 'en';
+        if(search){
+          search.placeholder = (lang==='ar')
+            ? (search.getAttribute('data-ar-placeholder') || 'ابحث…')
+            : (search.getAttribute('data-en-placeholder') || 'Search…');
+        }
+        const firstOpt = year?.querySelector('option[value="all"]');
+        if(firstOpt){
+          firstOpt.textContent = (lang==='ar')
+            ? firstOpt.getAttribute('data-ar')
+            : firstOpt.getAttribute('data-en');
+        }
+        chips.forEach(ch=>{
+          ch.textContent = (lang==='ar')
+            ? ch.getAttribute('data-ar')
+            : ch.getAttribute('data-en');
+        });
+      }
+
+      // Observe language changes (your global toggle sets <html lang="...">)
+      const obs = new MutationObserver(localizeUI);
+      obs.observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
+
+      // init
+      localizeUI();
+      apply();
+    })();
+  </script>
+</body>
+</html>
